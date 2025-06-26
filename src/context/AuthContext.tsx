@@ -6,7 +6,7 @@ interface AuthContextType {
   isAuthenticated: boolean;
   isLoading: boolean;
   login: (email: string, password: string) => Promise<void>;
-  register: (name: string, email: string, password: string, role: 'student' | 'employer' | 'career_counselor') => Promise<void>;
+  register: (name: string, email: string, password: string, role: 'student' | 'employer' | 'career_counselor' | 'admin') => Promise<void>;
   logout: () => void;
   updateUser: (userData: Partial<User>) => void;
 }
@@ -139,7 +139,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   };
 
-  const register = async (name: string, email: string, password: string, role: 'student' | 'employer' | 'career_counselor') => {
+  const register = async (name: string, email: string, password: string, role: 'student' | 'employer' | 'career_counselor' | 'admin') => {
     setIsLoading(true);
     try {
       // Create new user
@@ -163,6 +163,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         newUser.rating = 0;
         newUser.totalSessions = 0;
         newUser.availability = [];
+      } else if (role === 'admin') {
+        newUser.permissions = ['user_management', 'system_settings', 'analytics', 'content_management'];
       }
       
       localStorage.setItem('user', JSON.stringify(newUser));
