@@ -117,7 +117,7 @@ const AdminDashboard: React.FC = () => {
           <div className="flex flex-col md:flex-row md:items-center justify-between">
             <div className="mb-4 md:mb-0">
               <h1 className="text-2xl md:text-3xl font-bold">Admin Dashboard</h1>
-              <p className="mt-2 text-gray-300">Monitor and manage the FutureEdge platform.</p>
+              <p className="mt-2 text-gray-300">Monitor and manage the CareerConnect platform.</p>
               <div className="mt-3 flex items-center space-x-4 text-sm">
                 <span className="bg-gray-700 px-3 py-1 rounded-full flex items-center">
                   <Shield size={14} className="mr-1" />

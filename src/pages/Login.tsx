@@ -59,7 +59,7 @@ const Login: React.FC = () => {
           </Link>
           <h2 className="mt-4 text-3xl font-bold text-gray-900">Welcome back</h2>
           <p className="mt-2 text-gray-600">
-            Sign in to your FutureEdge account
+            Sign in to your CareerConnect account
           </p>
         </div>
 

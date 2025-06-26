@@ -11,7 +11,7 @@ const LandingPage: React.FC = () => {
           <div className="flex justify-between h-16 items-center">
             <div className="flex items-center">
               <GraduationCap size={32} className="text-primary-600" />
-              <span className="ml-2 text-xl font-bold text-primary-900">FutureEdge</span>
+              <span className="ml-2 text-xl font-bold text-primary-900">CareerConnect</span>
             </div>
             <div className="hidden md:flex items-center space-x-6">
               <a href="#features" className="text-gray-600 hover:text-gray-900">Features</a>
@@ -41,7 +41,7 @@ const LandingPage: React.FC = () => {
                 Your Career Journey <span className="text-primary-600">Starts Here</span>
               </h1>
               <p className="mt-6 text-xl text-gray-600 max-w-2xl">
-                FutureEdge helps university students build their professional profile, connect with employers, and land their dream jobs.
+                CareerConnect helps university students build their professional profile, connect with employers, and land their dream jobs.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
                 <Link to="/register" className="btn btn-primary text-lg px-8 py-3">
@@ -61,7 +61,7 @@ const LandingPage: React.FC = () => {
             <div className="lg:w-1/2 lg:pl-8 animate-fade-in">
               <img 
                 src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                alt="Students using FutureEdge" 
+                alt="Students using CareerConnect" 
                 className="rounded-xl shadow-xl"
               />
             </div>
@@ -78,7 +78,7 @@ const LandingPage: React.FC = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Everything You Need to Succeed</h2>
             <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-              FutureEdge provides all the tools and resources you need to launch your career.
+              CareerConnect provides all the tools and resources you need to launch your career.
             </p>
           </div>
           
@@ -169,7 +169,7 @@ const LandingPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center">
             <div className="lg:w-1/2 lg:pr-12 mb-10 lg:mb-0 order-2 lg:order-1">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Why Students Love FutureEdge</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Why Students Love CareerConnect</h2>
               <div className="mt-8 space-y-6">
                 <div className="flex">
                   <div className="flex-shrink-0">
@@ -222,7 +222,7 @@ const LandingPage: React.FC = () => {
             <div className="lg:w-1/2 lg:pl-12 order-1 lg:order-2">
               <img 
                 src="https://img.freepik.com/premium-photo/corporate-data-management-system-document-management-system-with-employee-privacy-employee-confidentiality-software-security-searching-manage-corporate-files-employee-information_162459-4574.jpg" 
-                alt="Students using FutureEdge" 
+                alt="Students using CareerConnect" 
                 className="rounded-xl shadow-xl"
               />
             </div>
@@ -236,7 +236,7 @@ const LandingPage: React.FC = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Success Stories</h2>
             <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-              Hear from students who launched their careers with FutureEdge.
+              Hear from students who launched their careers with CareerConnect.
             </p>
           </div>
           
@@ -253,7 +253,7 @@ const LandingPage: React.FC = () => {
               </div>
               <div className="pt-6">
                 <p className="text-gray-600 italic mb-4">
-                  "FutureEdge helped me land my dream internship at Google. The resume builder and interview prep resources were game-changers!"
+                  "CareerConnect helped me land my dream internship at Google. The resume builder and interview prep resources were game-changers!"
                 </p>
                 <div className="flex justify-between items-center">
                   <div>
@@ -313,7 +313,7 @@ const LandingPage: React.FC = () => {
               </div>
               <div className="pt-6">
                 <p className="text-gray-600 italic mb-4">
-                  "As a first-generation college student, I had no idea where to start. FutureEdge guided me through every step of my job search."
+                  "As a first-generation college student, I had no idea where to start. CareerConnect guided me through every step of my job search."
                 </p>
                 <div className="flex justify-between items-center">
                   <div>
@@ -339,7 +339,7 @@ const LandingPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold">Ready to Launch Your Career?</h2>
           <p className="mt-4 text-xl text-primary-100 max-w-3xl mx-auto">
-            Join thousands of students who have found their dream jobs through FutureEdge.
+            Join thousands of students who have found their dream jobs through CareerConnect.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4">
             <Link to="/register" className="btn bg-white text-primary-700 hover:bg-primary-50 text-lg px-8 py-3">
@@ -359,7 +359,7 @@ const LandingPage: React.FC = () => {
             <div>
               <div className="flex items-center mb-4">
                 <GraduationCap size={28} className="text-white" />
-                <span className="ml-2 text-xl font-bold text-white">FutureEdge</span>
+                <span className="ml-2 text-xl font-bold text-white">CareerConnect</span>
               </div>
               <p className="text-sm">
                 Connecting university students with career opportunities and resources.
@@ -423,7 +423,7 @@ const LandingPage: React.FC = () => {
           </div>
           
           <div className="mt-12 pt-8 border-t border-gray-800 text-sm text-center">
-            <p>&copy; {new Date().getFullYear()} FutureEdge. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} CareerConnect. All rights reserved.</p>
           </div>
         </div>
       </footer>

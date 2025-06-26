@@ -20,7 +20,7 @@ const SystemSettings: React.FC = () => {
   const [showApiKey, setShowApiKey] = useState(false);
   const [settings, setSettings] = useState({
     general: {
-      siteName: 'FutureEdge',
+      siteName: 'CareerConnect',
       siteDescription: 'Professional Career Development Platform',
       maintenanceMode: false,
       allowRegistration: true,

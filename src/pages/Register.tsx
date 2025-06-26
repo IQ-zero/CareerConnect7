@@ -8,7 +8,7 @@ const Register: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-  const [role, setRole] = useState<'student' | 'employer' | 'career_counselor' | 'admin'>('student');
+  const [role, setRole] = useState<'student' | 'employer' | 'career_counselor'>('student');
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const { register } = useAuth();
@@ -49,7 +49,7 @@ const Register: React.FC = () => {
           </Link>
           <h2 className="mt-4 text-3xl font-bold text-gray-900">Create your account</h2>
           <p className="mt-2 text-gray-600">
-            Join FutureEdge to kickstart your career journey
+            Join CareerConnect to kickstart your career journey
           </p>
         </div>
 
@@ -154,7 +154,7 @@ const Register: React.FC = () => {
                 <label className="block text-sm font-medium text-gray-700">
                   I am a:
                 </label>
-                <div className="mt-2 grid grid-cols-2 gap-3">
+                <div className="mt-2 grid grid-cols-3 gap-3">
                   <div>
                     <button
                       type="button"
@@ -195,20 +195,6 @@ const Register: React.FC = () => {
                     >
                       <User size={16} className={`mr-2 ${role === 'career_counselor' ? 'text-primary-500' : 'text-gray-500'}`} />
                       Counselor
-                    </button>
-                  </div>
-                  <div>
-                    <button
-                      type="button"
-                      onClick={() => setRole('admin')}
-                      className={`w-full relative inline-flex items-center justify-center px-4 py-2 border ${
-                        role === 'admin' ? 'border-primary-500 bg-primary-50' : 'border-gray-300 bg-white'
-                      } rounded-md shadow-sm text-sm font-medium ${
-                        role === 'admin' ? 'text-primary-700' : 'text-gray-700'
-                      } hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500`}
-                    >
-                      <Lock size={16} className={`mr-2 ${role === 'admin' ? 'text-primary-500' : 'text-gray-500'}`} />
-                      Admin
                     </button>
                   </div>
                 </div>

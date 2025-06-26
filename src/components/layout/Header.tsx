@@ -52,7 +52,7 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
         <div className="flex items-center">
           <Link to="/app" className="flex items-center space-x-2">
             <GraduationCap size={28} className="text-primary-600" />
-            <span className="text-xl font-bold text-primary-900 hidden sm:inline-block">FutureEdge</span>
+            <span className="text-xl font-bold text-primary-900 hidden sm:inline-block">CareerConnect</span>
           </Link>
         </div>
 
