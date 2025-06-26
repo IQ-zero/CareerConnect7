@@ -44,7 +44,7 @@ import SystemSettings from './pages/admin/SystemSettings';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/CareerConnect7">
       <AuthProvider>
         <UserProvider>
           <SavedItemsProvider>
