@@ -44,7 +44,7 @@ import SystemSettings from './pages/admin/SystemSettings';
 
 function App() {
   return (
-    <Router basename="/FutureEdge">
+    <Router>
       <AuthProvider>
         <UserProvider>
           <SavedItemsProvider>
