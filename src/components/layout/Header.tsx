@@ -45,12 +45,29 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
     setSearchQuery('');
   };
 
+  // Get the appropriate dashboard route based on user role
+  const getDashboardRoute = () => {
+    if (!user) return '/app';
+    
+    switch (user.role) {
+      case 'employer':
+        return '/app/employer';
+      case 'career_counselor':
+        return '/app/counselor';
+      case 'admin':
+        return '/app/admin';
+      case 'student':
+      default:
+        return '/app';
+    }
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 bg-white shadow-sm z-20 transition-all duration-300">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-6 h-16">
         {/* Logo and branding */}
         <div className="flex items-center">
-          <Link to="/app" className="flex items-center space-x-2">
+          <Link to={getDashboardRoute()} className="flex items-center space-x-2">
             <GraduationCap size={28} className="text-primary-600" />
             <span className="text-xl font-bold text-primary-900 hidden sm:inline-block">CareerConnect</span>
           </Link>
